@@ -15,7 +15,12 @@ import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
-
+/**
+ * Aceasta clasa realizeaza teste unitare asupra clasei {@link Weather} cu ajutorul obiectelor de tip mock si a librariei mockito.
+ *
+ * @author Rafaila Cristina
+ * @see Weather
+ */
 public class WeatherTest{
 
     Weather instance;
@@ -23,6 +28,12 @@ public class WeatherTest{
     ArrayList<String> arrayExpected;
     ArrayList<String> array=new ArrayList<String>();
 
+    /**
+     * In aceasta functie se face un setUp pentru executarea testelor ulterioare: se instantiaza un obiect de tip mock si un comportament
+     * al acestuia si se construieste o lista pe care noi o asteptam sa o primim ca rezultat in urma unor teste, pentru a putea efectua verificari.
+     *
+     * @throws Exception
+     */
     @BeforeMethod
     public void setUp() throws Exception {
 
@@ -42,6 +53,13 @@ public class WeatherTest{
         when(mockRn.GetID("123","123")).thenReturn("6942372");
     }
 
+    /**
+     * Acest test verifica daca lista de orase returnata prin clasa cu obiectul mock este cea asteptata.
+     * Se asteapta ca rezultatul sa fie Fals.
+     *
+     * @throws HandleException
+     * @throws FileNotFoundException
+     */
     @Test
     public void getCountryList() throws HandleException, FileNotFoundException {
 
@@ -52,6 +70,12 @@ public class WeatherTest{
 
     }
 
+    /**
+     * Acest test verifica daca se arunca o exceptie in momentul in care cautam orase dintr-o tara care nu exista in lista noastra.
+     *
+     * @throws FileNotFoundException
+     * @throws HandleException
+     */
     @Test
     public void getCityList() throws FileNotFoundException, HandleException {
         array.add("123\t123\t123\t123\t123");
@@ -61,6 +85,12 @@ public class WeatherTest{
         assertEquals("Nu exista niciun oras in RO", exception.getMessage());
     }
 
+    /**
+     * Acest test verifica daca se arunca o exceptie in momentul in care cautam vremea pentru o pereche [oras-tara] invalida.
+     *
+     * @throws IOException
+     * @throws HandleException
+     */
     @Test
     public void getWeather() throws IOException, HandleException {
         array.add("123\t123\t123\t123\t123");
@@ -70,6 +100,13 @@ public class WeatherTest{
         assertEquals("Nu s-a putut returna niciun id", exception.getMessage());
 
     }
+
+    /**
+     * Acest test verifica daca am primit corect vremea pentru un id cautat.
+     *
+     * @throws IOException
+     * @throws HandleException
+     */
     @Test
     public void getWeather2() throws IOException, HandleException {
         array.add("6942372\t123\t123\t123\t123");
