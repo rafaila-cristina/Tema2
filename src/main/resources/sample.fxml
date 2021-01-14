@@ -4,6 +4,92 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="467.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="467.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.se.lab.Controller.Controller">
+    <children>
 
+        <SplitPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+
+                        <Label translateX="20" text="Country:">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+
+                        <GridPane  AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="90.0">
+                            <ListView onMouseClicked="#getCitiesList" fx:id="countryList" editable="true" translateY="-60.0" maxHeight="150" />
+                        </GridPane>
+
+                        <Label translateX="20" translateY="200" text="City:">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+
+                        <GridPane translateY="180" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="90.0">
+                            <ListView onMouseClicked="#getWeather" fx:id="cityList" editable="true" translateY="-40.0" maxHeight="150" />
+                        </GridPane>
+
+                    </children>
+                </AnchorPane>
+
+                <AnchorPane style="-fx-background-color: #F9F3A5;" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+
+                        <GridPane AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+
+                            <Text fx:id="locationText">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Text>
+
+                            <Text translateY="30" fx:id="dateText">
+                                <font>
+                                    <Font size="15.0" />
+                                </font>
+                            </Text>
+
+                            <Text translateY="60" fx:id="temperatureText">
+                                <font>
+                                    <Font size="30.0" />
+                                </font>
+                            </Text>
+
+                            <Text translateY="90" translateX="100" fx:id="cloudText">
+                                <font>
+                                    <Font size="15.0" />
+                                </font>
+                            </Text>
+
+                            <Text translateY="110" translateX="100" fx:id="windText">
+                                <font>
+                                    <Font size="15.0" />
+                                </font>
+                            </Text>
+
+                            <Text translateY="130" translateX="100" fx:id="humidityText">
+                                <font>
+                                    <Font size="15.0" />
+                                </font>
+                            </Text>
+
+                            <ImageView visible="false" translateX="-20" translateY="110"  fx:id="imageView" >
+                                    <Image url="white.png" />
+                            </ImageView>
+
+                        </GridPane>
+
+                    </children>
+                </AnchorPane>
+
+            </items>
+        </SplitPane>
+
+    </children>
 </AnchorPane>
