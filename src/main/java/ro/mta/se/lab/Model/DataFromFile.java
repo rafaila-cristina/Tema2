@@ -14,8 +14,8 @@ public class DataFromFile {
         DataFromFile._mFileName = _mFileName;
         ReadFile();
     }
-    public DataFromFile() {
 
+    public DataFromFile() {
     }
 
     public static void set_mLines(ArrayList<String> _mLines) {
