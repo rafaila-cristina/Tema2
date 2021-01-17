@@ -30,7 +30,6 @@ ID_locație\tOraș\tlatitudine\tlongitudine\tcod_țară
 6455259	Paris	48.856461	2.35236	FR<br/>
 6455270	Bressuire	46.849998	-0.48333	FR<br/>
 
-
 ## Diagrame UML <a name="p3"></a>
 
 ### Diagrama de clase <a name="p4"></a>
