@@ -20,14 +20,15 @@ Fișierul trebuie să aibă denumire „Cities.txt” si trebuie să aibă urmă
 ID_locație\tOraș\tlatitudine\tlongitudine\tcod_țară
 
 ### Exemplu fișier intrare <a name="p2"></a>
-6942372	Miercurea Ciuc	46.357948	25.80405	RO
-683506	Bucharest	44.432251	26.10626	RO
-2643743	London	51.50853	-0.12574	GB
-2643797	Lochwinnoch	55.795212	-4.63034	GB
-4887398	Chicago	41.850029	-87.650047	US
-5304640	Miami	33.39922	-110.868721	US
-6455259	Paris	48.856461	2.35236	FR
-6455270	Bressuire	46.849998	-0.48333	FR
+
+6942372	Miercurea Ciuc	46.357948	25.80405	RO<br/>
+683506	Bucharest	44.432251	26.10626	RO<br/>
+2643743	London	51.50853	-0.12574	GB<br/>
+2643797	Lochwinnoch	55.795212	-4.63034	GB<br/>
+4887398	Chicago	41.850029	-87.650047	US<br/>
+5304640	Miami	33.39922	-110.868721	US<br/>
+6455259	Paris	48.856461	2.35236	FR<br/>
+6455270	Bressuire	46.849998	-0.48333	FR<br/>
 
 ## Diagrame UML <a name="p3"></a>
 
@@ -38,5 +39,5 @@ ID_locație\tOraș\tlatitudine\tlongitudine\tcod_țară
 ![enter image description here](https://github.com/rafaila-cristina/Tema2/blob/InitProject/UML/Diagrama%20de%20secventa.png?raw=true)
 
 ## Realizator <a name="p6"></a>
-Rafailă Cristina-Oana 
+Rafailă Cristina-Oana <br/>
 Grupa: C114A
