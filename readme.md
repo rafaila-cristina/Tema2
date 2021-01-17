@@ -10,6 +10,7 @@
     2. [Diagrama de secvență](#p5)
 3. [Realizator](#p6)
 
+
 ## Introducere <a name="introducere"></a>
 Această aplicație își propune să afișeze starea curentă a vremii pentru o locație aleasă de utilizator. Pentru selectarea locației dorite utilizatorul are la dispoziție două liste, prima conținând numele țărilor disponibile in aplicație, iar cea de-a doua listă conținând orașe aparținând țării selectate. Datele de intrare sunt furnizate prin intermediul unui fișier. Se fac request-uri catre API-ul [OpenWeatherMap](https://openweathermap.org/api) pentru a prelua datele legate de vreme.
 Aplicația folosește JavaFX si Gson.
